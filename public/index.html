@@ -6,20 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="Web site created using create-snowpack-app" />
     <link rel="stylesheet" type="text/css" href="/index.css" />
-    <title>Snowpack App</title>
+    <title>Typescript Video</title>
   </head>
   <body>
+     <div class="preloader">
+      <img src="preloader.gif" alt="preloader" class="preloader__item" />
+    </div>
+
+    <header>
+      <video controls muted autoplay loop class="video-container">
+        <source src="./video.mp4" type="video/mp4" />
+      </video>
+      <h1>video project</h1>
+
+      <button class="switch-btn">
+        <span>
+          play
+        </span>
+        <span>
+          pause
+        </span>
+        <span class="switch"></span>
+      </button>
+    </header>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <script type="module" src="/dist/index.js"></script>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
   </body>
 </html>
